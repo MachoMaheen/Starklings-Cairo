@@ -4,14 +4,17 @@
 // Make me compile and pass the test!
 // Execute `starklings hint arrays1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+
 
 use array::ArrayTrait;
 use option::OptionTrait;
 
 fn create_array() -> Array<felt252> {
-    let a = ArrayTrait::new(); // something to change here...
-    a.append(1);
+    let mut a: Array<felt252> = ArrayTrait::<felt252>::new(); // something to change here...
+    
+   a.append(0);
+   a.append(0);
+   a.append(0);
     a
 }
 
